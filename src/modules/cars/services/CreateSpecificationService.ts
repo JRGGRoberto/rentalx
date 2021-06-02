@@ -4,13 +4,6 @@ interface IRequest {
   name: string;
   description: string;
 }
-/*
-[ ] - Definir o tipo de retorno
-[x] - Alterar o retorno do erro -- throw new Error
-[ ] - Acessar o repositório
-[ ] - Retornar algo
-*/
-
 class CreateSpecificationService {
   constructor(private specificatiosRepository: SpecificatiosRepository){}
 

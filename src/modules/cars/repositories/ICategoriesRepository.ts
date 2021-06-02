@@ -13,3 +13,4 @@ interface ICategoriesRepository {
 }
 
 export { ICategoriesRepository, ICreateCategoryDTO }
+
