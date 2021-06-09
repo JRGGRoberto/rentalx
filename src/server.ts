@@ -2,7 +2,7 @@ import express from 'express';
 import swaggerUI from 'swagger-ui-express';
 
 import swaggerFile from './swagger.json';
-import { router } from './routes';
+import { router } from './routers';
 
 const app = express();
 
