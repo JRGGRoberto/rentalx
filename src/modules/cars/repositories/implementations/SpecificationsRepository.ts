@@ -17,7 +17,6 @@ class SpecificationsRepository implements ISpecificationsRepository{
       description,
       name,
     });
-
     await this.repository.save(specification);
   }
 
