@@ -1,3 +1,4 @@
+import { AppError } from "../../../../errors/AppError";
 import { getRepository, Repository } from "typeorm";
 
 import { ICreateUserDTO } from '../../dtos/ICreateUserDTO'
@@ -33,7 +34,7 @@ class UsersRepository implements IUsersRepository {
   }
   
   list(): Promise<User[]> {
-    throw new Error("Method not implemented.");
+    throw new AppError("Method not implemented.");
   }
 
 }
