@@ -2,6 +2,7 @@ import { Response, Request, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken';
 import { UsersRepository } from '../modules/accounts/repositories/implementations/UsersRepository';
 import { AppError } from '../errors/AppError';
+import { SimpleConsoleLogger } from 'typeorm';
 
 interface IPayload {
   sub: string;
@@ -32,6 +33,11 @@ export async function ensureAuthenticated(
     if (!user){
       throw new AppError("User dos not exists!", 401)
     }
+
+    request.user = {
+      id: user_id
+    }
+
     return next();
 
   } catch (e) {

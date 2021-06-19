@@ -4,7 +4,7 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 @Entity("users")
 class User {
   @PrimaryColumn()
-  id?: string;
+  id: string;
 
   @Column()
   name: string;
@@ -20,6 +20,9 @@ class User {
 
   @Column()
   isAdmin: boolean;
+
+  @Column()
+  avatar: string;
   
   @CreateDateColumn()
   created_at: Date;

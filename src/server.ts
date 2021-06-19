@@ -20,8 +20,6 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 app.use(router);
 
-console.log('ae')
-
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
     if(err instanceof AppError){

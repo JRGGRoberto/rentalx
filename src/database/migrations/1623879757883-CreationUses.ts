@@ -27,7 +27,8 @@ export class CreationUses1623879757883 implements MigrationInterface {
             },
             {
               name: "email",
-              type: "varchar"
+              type: "varchar",
+              isUnique: true
             },
             {
               name: "driver_licence",
