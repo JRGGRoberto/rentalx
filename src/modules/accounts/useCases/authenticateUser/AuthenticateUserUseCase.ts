@@ -1,8 +1,9 @@
-import { IUsersRepository } from "../../repositories/IUsersRepository";
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import { inject, injectable } from "tsyringe";
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "@errors/AppError";
+import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository';
+// import { AppError } from "../../../../errors/AppError"; ante da config  linha 47 tsconfig.json
 
 interface IRequest{
   email: string;
@@ -24,7 +25,7 @@ class AuthenticateUserUseCase {
     private usersRepository: IUsersRepository
   ){}
 
-  async execute({ email, password}: IRequest): Promise<IResponse>{
+  async execute({ email, password }: IRequest): Promise<IResponse>{
 
     const user = await this.usersRepository.findByEmail(email);
     if (!user){

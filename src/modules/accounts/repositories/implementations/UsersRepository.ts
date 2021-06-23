@@ -1,4 +1,4 @@
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "@errors/AppError";
 import { getRepository, Repository } from "typeorm";
 
 import { ICreateUserDTO } from '../../dtos/ICreateUserDTO'
@@ -41,10 +41,6 @@ class UsersRepository implements IUsersRepository {
   async findById(id: string): Promise<User> {
     const user = await this.repository.findOne({ id });
     return user;
-  }
-  
-  list(): Promise<User[]> {
-    throw new AppError("Method not implemented.");
   }
 
 }
