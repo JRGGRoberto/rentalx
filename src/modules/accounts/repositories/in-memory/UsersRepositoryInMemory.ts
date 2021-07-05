@@ -1,10 +1,6 @@
-import { AppError } from "@errors/AppError";
-//import { getRepository, Repository } from "typeorm";
-
 import { ICreateUserDTO } from '../../dtos/ICreateUserDTO'
-import { User } from "../../entities/Users";
 import { IUsersRepository } from "../IUsersRepository";
-
+import { User } from "@modules/accounts/infra/typeorm/entities/Users";
 class UsersRepositoryInMemory implements IUsersRepository {
   //private repository: Repository<User>;
   users: User[] = []; 

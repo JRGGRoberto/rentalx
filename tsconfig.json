@@ -9,12 +9,11 @@
       "@modules/*": ["modules/*"] ,
       "@config/*": ["config/*"] ,
       "@shared/*": ["shared/*"] ,
-      "@errors/*": ["errors/*"] ,
-      "@utils/*": ["utils/*"] ,
+      "@utils/*": ["utils/*"]
     },
     "typeRoots": [
       "./src/@types",
-      "./node_modules/@types",
+      "./node_modules/@types"
     ],
     "esModuleInterop": true,
 
