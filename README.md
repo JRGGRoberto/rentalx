@@ -2,12 +2,12 @@
 
 **RF**
 [x] Deve ser possível cadastrar um novo carro.
--- Deve ser possível listar todas as categorias.
+-- not here-  Deve ser possível listar todas as categorias.
 
 **RN**
 [x] Não deve ser possível cadastar um carro com uma placa já existente.
 [x] O carro deve ser cadastrado, por padrão como disponível.
-* O usuário responsável pelo cdadastro deve ser um usuário administrador.
+[x] O usuário responsável pelo cdadastro deve ser um usuário administrador.
 
 # Listagem de carros
 
