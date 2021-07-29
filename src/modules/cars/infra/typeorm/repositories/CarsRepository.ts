@@ -5,7 +5,6 @@ import { Car } from "../entities/Car";
 
 
 class CarsRepository implements ICarsRepository {
-
   private repository: Repository<Car>;
 
   constructor() {
