@@ -26,7 +26,7 @@ class UpdateUserAvatarUseCase{
     }
 
     user.avatar = avatar_file;
-    console.log(`Avatar_file: ${avatar_file}`);
+//    console.log(`Avatar_file: ${avatar_file}`);
 
     await this.userRepository.create(user);
   }

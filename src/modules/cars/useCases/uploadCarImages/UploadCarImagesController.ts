@@ -6,7 +6,6 @@ import { UploadCarImagesUseCase } from "./UploadCarImagesUseCase";
 interface IFiles {
   filename: string;
 }
-
 class UploadCarImagesController{
   async handle(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
