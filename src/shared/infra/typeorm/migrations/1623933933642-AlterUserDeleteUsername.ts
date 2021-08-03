@@ -12,7 +12,7 @@ export class AlterUserDeleteUsername1623933933642 implements MigrationInterface 
           {
             name: "username",
             type: "varchar",
-            isUnique: true
+            isPrimary: true
           }
         ))
     }
